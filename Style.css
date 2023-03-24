@@ -1,0 +1,290 @@
+*{
+box-sizing: border-box;
+font-family:unset;
+margin: 1;
+padding: 0;
+}
+html{
+/*me permite deslizar cuando hago clic en los links del menu*/
+scroll-behavior:smooth;
+}
+/* Menu */
+.contenedor-header{
+
+                  background: yellow;
+                  position: fixed;
+                  width: 100%;
+                  top: 0;
+                  left: 0;
+                  z-index: 90%;
+}
+.contenedor-header header{
+                  max-width: 1100px;
+                  margin: auto;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 15px 25px;
+}
+.contenedor-header header .logo a{
+                  font-family:unset;               
+                  font-size: 40px;
+                  color: rgb(255, 22, 22);
+                  text-decoration: none;
+}
+.contenedor-header header ul{
+                  display: flex;
+                  list-style: none;
+}
+.contenedor-header header nav ul li a{
+                  font-family:unset;
+                  font-size: 23px;
+                  text-align: none;
+                  color: blue;
+                  margin: 0 15px;
+                  padding: 3px;
+                  transition: 1s;
+                  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+                  color:red;
+}
+.nav-responsive{
+                  background-color: blueviolet;
+                  color: antiquewhite;
+                  padding: 5px 10px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  display: none;
+}
+/* SECCION INICIO*/
+.inicio{
+                      background-image: url("robot-technology-kuka-car-wallpaper-preview.jpg");
+                      background-size: cover;
+                      height: 100vh;
+                      color:blue;
+                      display: flex;
+                      align-items: center;
+                      justify-content:center;
+}
+
+.inicio .contenedor-banner{
+                      display: block;
+                      background-color:darkgray;
+                      align-items: center;
+                      padding: 10px;
+                      max-width: 250px;
+                      margin-top: auto;
+                    text-align: center;
+                      border-radius: 60px;
+}
+.inicio .contenedor-banner img{
+                    
+                      display: block;
+                      align-items:center;
+                      margin-top: 80px;
+                      border: 3px solid blue;
+                      width: 85%;
+                      margin-top: auto;
+                     border-radius: 40%;
+                     height: 40vh;
+}
+.inicio .contenedor-banner h1{
+                      margin-top: 50 px;
+                      font-size: 37px;
+                      font-family:initial;
+}
+.inicio .contenedor-banner h2{
+                      font-size: 20px;
+                      font-family:initial;
+}
+.inicio .contenedor-banner .redes a{
+                    justify-content: center;
+                        color:darkblue; 
+                        display:inline-block;  
+                        text-decoration: none;
+                        border: 3px solid black;
+                        border-radius: 30%;
+                        width: 27px;
+                        height: 27px;
+                        margin: 5px 5px;
+                        font-size: 20px;
+                        transition: .3s;
+}            
+.inicio .contenedor-banner .redes a:hover{
+                        background-color:yellow;
+}
+
+/*Seccion Sobremi*/
+.sobremi{
+                        background-color: black;
+                        color: aquamarine;
+                        padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+                        max-width: 1100px;
+                        margin: auto;
+}
+.sobremi h2{
+           font-size: 46px; 
+           text-align: center;   
+           padding: 20px 0;         
+}
+.sobremi .contenido-seccion p{
+                        font-size:20px ;
+                        font: 25px;
+                        line-height: 22px;
+}
+.sobremi .contenido-seccion p span{
+                        font-size: 20px;
+                        color: red;
+                        font-weight: bold;
+}
+.sobremi .fila{
+                        display: flex;
+}
+.sobremi .fila .col{
+                        width: 60%;
+}
+.sobremi .fila .col h3{
+                        font-size: 25px;
+                        margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+                        list-style: none;
+}
+.sobremi .fila .col ul li{
+                        margin: 10px 0;
+                        font-size: 18px;
+
+}
+.sobremi .fila .col ul li span{
+                        background-color: blueviolet;
+                        padding: 3px;
+                        font-weight: bold;
+                        border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+                        font-size: 18px;
+                        margin-bottom: 10px;
+}
+.sobremi button{
+  cursor: pointer;
+  background-color:aqua;
+  width: fit-content;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.sobremi button .overlay {
+                        position: absolute;
+                        background-color:chartreuse;
+                        top: 0;
+                        left: 0;
+                        width: 0%;
+                        height: 100%;
+                        z-index: 1;
+                        transition: 1s;
+ }
+ .sobremi button:hover .overlay{
+  width: 100%;
+ }
+
+/* SECCION CURRICULUM */
+.curriculum{
+                        background-color:mediumpurple;
+                        color:brown;
+                        padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+                        max-width: 1100px;
+                        margin: auto;
+}
+.curriculum h2{
+                        font-size: 38px;
+                        text-align:center;
+                        padding: 20px 0;
+}
+.curriculum .fila{
+                        display:flex;
+}
+.curriculum .fila .col{
+                        width: 100%;
+                        padding: 20px 0;
+                        
+}
+.curriculum .fila .item h4{
+  font-size: 20px;
+}
+.curriculum .fila h3{
+  font-size: 24px;
+}
+.curriculum .fila .item{
+  padding: 20px;
+  margin-bottom: 32px;
+  background-color:floralwhite;
+  position: relative;
+}
+
+/* Seccion Contacto */
+.contacto .contenido-seccion{
+                        background-color: aquamarine;
+                        max-width: 1100px;
+                        margin: auto;
+                        
+}
+.contacto h2{
+                        font-size: 44px; 
+                        text-align: center;   
+                        padding: 20px 0; 
+}
+.contacto .fila{
+                display: flex;
+}
+.contacto .col{
+                        width: 50%;
+                        padding: 10px;
+                        position: relative;
+}
+
+/* Seccion Footer*/
+footer{
+                        background-color: #252A2E;
+                        color:cyan;
+                        padding: 50px 0 30px 0;
+                        text-align: center;
+                        position: relative;
+                        width: 100%;
+}
+footer .redes{
+                        margin-bottom: 30px;
+}
+footer .redes a{
+                        color:yellow; 
+                        display: inline-block;  
+                        text-decoration: none;
+                        border: 3px solid black;
+                        border-radius: 30%;
+                        width: 36px;
+                        height: 36px;
+                        margin: 10px 10px;
+                        font-size: 20px;
+                        transition: .3s;
+}
+footer .redes  a:hover{
+  background-color:aliceblue;
+}
+
+footer .arriba{
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        background-color: aquamarine;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: -25px;
+                        border-radius: 50%;
+                        line-height: 50px;
+                        font-size: 18px;
+}
